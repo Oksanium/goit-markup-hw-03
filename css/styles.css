@@ -75,13 +75,13 @@ h1, h2, h3, p {
 /* #endregion */
 
 /* #region Logos and Header */
-header {border-right: 1px solid #e7e9fc;}
+.header {border-right: 1px solid #e7e9fc;}
 
 .header-container {
     display: flex;
 }
 
-nav {
+.nav {
     display: flex;
     align-items: center;
 }
@@ -158,11 +158,14 @@ nav {
 .hero-section {
     text-align: center;
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-title {
-    margin: 0;
+    margin: auto;
     margin-bottom: 48px;
+    max-width: 496px;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -172,13 +175,15 @@ nav {
 }
 
 .order-service-btn {
+    display: block;
+    margin: auto;
     border-radius: 4px;
-    text-align: center;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border: 0;
 
+    text-align: center;
     background-color: #4d5ae5;
     font-family: inherit;
     font-weight: 500;
@@ -204,7 +209,9 @@ nav {
     gap: 24px;
 }
 
-
+.article {
+    width: calc((100% - 3 * 24px) / 4);
+}
 
 /* #endregion */
 
@@ -226,11 +233,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 32px 0px;
+ 
     /* width: 264px;
     height: 380px; */
-    
-    
+        
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -240,6 +246,21 @@ nav {
     margin-bottom: 32px;
 }
 
+.person-card-text-content {
+    padding: 0px 0px 32px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.person-name {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.profession {text-align: center;}
 
 /* #endregion */
 
@@ -251,16 +272,17 @@ nav {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px;
 }
 
 .portfolio-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 48px;
+    width: calc((100% - 2 * 48px) / 3);
 }
 
-.card-text-content {
+.portfolio-card-text-content {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -271,23 +293,19 @@ nav {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
 }
 
 /* #endregion */
 
 /* #region Footer */
 .footer {
-    /* padding-top: 100px;
-    padding-left: 156px;
-    padding-bottom: 100px; */
-    /* height: 312px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
     background: #2e2f42;
 }
 
 .footer-logo {
-    display: block;
+    display: inline-block; 
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif; 
     font-weight: 700;
