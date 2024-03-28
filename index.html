@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>WebStudio</title>
@@ -17,154 +18,161 @@
     <header>
 
         <!-- Menu -->
-        <nav>
-            <!-- Logo -->
-            <a href="./index.html" class="logo">WEB<span class="header-logo-studio">Studio</span></a>
-            <ul>
-                <li><a href="./index.html" class="menu">Studio</a></li>
-                <li><a href="" class="menu">Portfolio</a></li>
-                <li><a href="" class="menu">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <!-- Contacts -->
-        <address class="contacts">
-            <ul>
-                <li><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li>
-                <li><a href="tel:+110001111111" class="contacts-item">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container header-container">
+            <nav>
+                <!-- Logo -->
+                <a href="./index.html" class="logo">WEB<span class="header-logo-studio">Studio</span></a>
+                <ul class="menu">
+                    <li><a href="./index.html" class="menu-item">Studio</a></li>
+                    <li><a href="" class="menu-item">Portfolio</a></li>
+                    <li><a href="" class="menu-item">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Contacts -->
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li>
+                    <li><a href="tel:+110001111111" class="contacts-item">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!-- Hero -->
-        <section class="hero">
-            <h1 class="hero-title">
-                Effective Solutions<br />
-                for Your Business
-            </h1>
-            <button type="button" class="order-service-btn">Order Service</button>
+        <section class="section hero-section">
+            <div class="container">
+                <h1 class="hero-title">
+                    Effective Solutions<br />
+                    for Your Business
+                </h1>
+                <button type="button" class="order-service-btn">Order Service</button>
+            </div>
         </section>
 
         <!-- Benefits -->
-        <section>
-            <h2 class="title-level-two">Benefits</h2>
-            <ul>
-                <li>
-                    <h3 class="title-level-three">Strategy</h3>
-                    <p class="paragraph">
-                        Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. 
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="title-level-three">Punctuality</h3>
-                    <p class="paragraph">
-                        Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. 
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="title-level-three">Diligence</h3>
-                    <p class="paragraph">
-                        Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. 
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-                <li>
-                    <h3 class="title-level-three">Technologies</h3>
-                    <p class="paragraph">
-                        Our goal is to identify the business
-                        problem to walk away with the perfect and creative solution. 
-                        Bring the key message to the brand's audience for the best price within the shortest possible time.
-                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                    </p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <h2 class="visually-hidden">Benefits</h2>
+                <ul class="benefits-list">
+                    <li>
+                        <h3 class="title-level-three">Strategy</h3>
+                        <p class="paragraph">
+                            Our goal is to identify the business
+problem to walk away with the perfect and creative solution. 
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="title-level-three">Punctuality</h3>
+                        <p class="paragraph">
+                            Bring the key message to the brand's audience for the best price within the shortest possible time.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="title-level-three">Diligence</h3>
+                        <p class="paragraph">
+                            Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="title-level-three">Technologies</h3>
+                        <p class="paragraph">
+                            Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Our Team -->
-        <section class="our-team-sec">
-            <h2 class="title-level-two">Our Team</h2>
-            <ul class="cards-list">
-                <li class="card">
-                    <img src="./images/img-1.jpg" alt="Mark's Portrait" class="card-photo">
-                    <h3 class="title-level-three">Mark Guerrero</h3>
-                    <p class="paragraph profession">Product Designer</p>
-                </li>
-                <li class="card">
-                    <img src="./images/img-2.jpg" alt="Tom's Portrait" class="card-photo">
-                    <h3 class="title-level-three">Tom Ford</h3>
-                    <p class="paragraph profession">Frontend Developer</p>
-                </li>
-                <li class="card">
-                    <img src="./images/img-3.jpg" alt="Camila's Portrait" class="card-photo">
-                    <h3 class="title-level-three">Camila Garcia</h3>
-                    <p class="paragraph profession">Marketing</p>
-                </li>
-                <li class="card">
-                    <img src="./images/img-4.jpg" alt="Daniel's Portrait" class="card-photo">
-                    <h3 class="title-level-three">Daniel Wilson</h3>
-                    <p class="paragraph profession">UI Designer</p>
-                </li>
-            </ul>
+        <section class="our-team-sec section">
+            <div class="container">
+                <h2 class="title-level-two">Our Team</h2>
+                <ul class="cards-list">
+                    <li class="card">
+                        <img src="./images/img-1.jpg" alt="Mark's Portrait" class="card-photo">
+                        <h3 class="title-level-three">Mark Guerrero</h3>
+                        <p class="paragraph profession">Product Designer</p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img-2.jpg" alt="Tom's Portrait" class="card-photo">
+                        <h3 class="title-level-three">Tom Ford</h3>
+                        <p class="paragraph profession">Frontend Developer</p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img-3.jpg" alt="Camila's Portrait" class="card-photo">
+                        <h3 class="title-level-three">Camila Garcia</h3>
+                        <p class="paragraph profession">Marketing</p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/img-4.jpg" alt="Daniel's Portrait" class="card-photo">
+                        <h3 class="title-level-three">Daniel Wilson</h3>
+                        <p class="paragraph profession">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Portfolio -->
-        <section>
-            <h2 class="title-level-two our-portfolio-title">Our Portfolio</h2>
-            <ul class="projects-list">
-                <li>
-                    <img src="./images/Portfolio/Portfolio1.jpg" alt="Banking App" width="360">
-                    <h3 class="title-level-three">Banking App</h3>
-                    <p class="paragraph">App</p>
-                </li>
-                <li>
-                    <img src="./images/Portfolio/Portfolio2.jpg" alt="Payment with Phone" width="360">
-                    <h3 class="title-level-three">Cashless Payment</h3>
-                    <p class="paragraph">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/Portfolio/Portfolio3.jpg" alt="Laptop and Phone" width="360">
-                    <h3 class="title-level-three">Meditation App</h3>
-                    <p class="paragraph">App</p>
-                </li>
-                <li>
-                    <img src="./images/Portfolio/Portfolio4.jpg" alt="Car steering wheel" width="360">
-                    <h3 class="title-level-three">Taxi Service</h3>
-                    <p class="paragraph">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/Portfolio/Portfolio5.jpg" alt="Phone wallpapers" width="360">
-                    <h3 class="title-level-three">Screen Illustrations</h3>
-                    <p class="paragraph">Design</p>
-                </li>
-                <li>
-                    <img src="./images/Portfolio/Portfolio6.jpg" alt="Woman with headset" width="360">
-                    <h3 class="title-level-three">Online Courses</h3>
-                    <p class="paragraph">Marketing</p>
-                </li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <h2 class="title-level-two our-portfolio-title">Our Portfolio</h2>
+                <ul class="projects-list">
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio1.jpg" alt="Banking App" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Banking App</h3>
+                            <p class="paragraph">App</p>
+                        </div>
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio2.jpg" alt="Payment with Phone" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Cashless Payment</h3>
+                            <p class="paragraph">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio3.jpg" alt="Laptop and Phone" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Meditation App</h3>
+                            <p class="paragraph">App</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio4.jpg" alt="Car steering wheel" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Taxi Service</h3>
+                            <p class="paragraph">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio5.jpg" alt="Phone wallpapers" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Screen Illustrations</h3>
+                            <p class="paragraph">Design</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-card">
+                        <img src="./images/Portfolio/Portfolio6.jpg" alt="Woman with headset" width="360">
+                        <div class="card-text-content">
+                            <h3 class="title-level-three">Online Courses</h3>
+                            <p class="paragraph">Marketing</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
-    <footer class="footer">
-        <!-- Logo -->
-        <a href="./index.html" class="footer-logo">WEB<span class="footer-logo-studio">Studio</span></a>
-        <p class="footer-text">
-            Increase the flow of customers and <br>
-            sales for your business with digital <br>
-            marketing & growth solutions.
-        </p>
+    <footer class="footer section">
+        <div class="container">
+            <!-- Logo -->
+            <a href="./index.html" class="footer-logo">WEB<span class="footer-logo-studio">Studio</span></a>
+            <p class="footer-text">
+                Increase the flow of customers and <br>
+                sales for your business with digital <br>
+                marketing & growth solutions.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
